@@ -17,7 +17,7 @@ public class Loginstep {
 	@Given("^Open chrome and start application$")
 	public void open_chrome_and_start_application()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\Selenium-Java-Automation\\BDDCucumber-1\\BrowserDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./BrowserDriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.guru99.com/V1/index.php");
